@@ -17,4 +17,5 @@
 node_modules/
 src/
 test/
+dist/
 README.md
