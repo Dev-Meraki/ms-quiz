@@ -7,7 +7,6 @@ import { fastifyMongodb, FastifyMongodbOptions } from '@fastify/mongodb'
  * @see https://github.com/fastify/fastify-sensible
  */
 export default fp<FastifyMongodbOptions>(async (fastify) => {
-  console.log('process.env->>>>>>>>>>>>>>>>>', process.env);
   fastify.register(fastifyMongodb, {
     url:`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.l7v9qsp.mongodb.net/?retryWrites=true&w=majority`,
     forceClose: true,
