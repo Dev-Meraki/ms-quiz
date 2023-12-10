@@ -24,6 +24,10 @@ jobs:
       - id: 'Build'
         name: 'Build artifacts'
         run: npm run build:ts
+      - id: 'storeDist'
+        uses: actions/upload-artifact@v3
+        with:
+          path: dist
       - id: 'auth'
         name: 'Authenticate To Google Cloud'
         uses: 'google-github-actions/auth@v1'
