@@ -35,6 +35,7 @@ jobs:
         uses: 'google-github-actions/deploy-appengine@v1'
         with:
           deliverables: './app.yml'
+          working_directory: "./dist"
           env_vars: |-
             DB_NAME=${{ secrets.DEV_STG_DB_NAME }}
             DB_PASS=${{ secrets.DEV_STG_DB_PASS }}

@@ -1,7 +1,7 @@
 {
   "extends": "fastify-tsconfig",
   "compilerOptions": {
-    "outDir": "workspace/dist",
+    "outDir": "dist",
     "sourceMap": true
   },
   "include": ["src/**/*.ts"]
